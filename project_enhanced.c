@@ -272,7 +272,6 @@ utilisateur* cree_util(int idU,const char nomU[10],const char emailU[20],int age
 }
 
 int generer_id(){
-    // simple random 5-digit id (non-cryptographic)
     return rand() + 10000;
 }
 
