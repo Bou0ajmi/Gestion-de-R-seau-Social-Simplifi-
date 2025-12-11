@@ -454,7 +454,7 @@ void sauvgarder_ABR(utilisateur* racineABR, FILE* fichier, FILE* fichiertxt){
     fwrite(racineABR->email, sizeof(racineABR->email), 1, fichier);
 
 
-    const int MAXP = 1024;
+    const int MAXP = 20000;
     char pubs[MAXP][50];
     int n = collecter_publications(racineABR->pub, pubs, MAXP);
     fwrite(&n, sizeof(int), 1, fichier);
